@@ -1,0 +1,59 @@
+﻿@page
+@model MyFitTimer.Pages.TimerRun.IndexModel
+
+@{ ViewData["Title"] = "Index"; }
+
+<h1>Index</h1>
+
+
+@*<p>
+        <a asp-page="Create">Create New</a>
+    </p>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.TimerRuns[0].StartTime)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.TimerRuns[0].EndTime)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+    @foreach (var item in Model.TimerRuns) {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.StartTime)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.EndTime)
+                </td>
+                <td>
+                    <a asp-page="./Edit" asp-route-id="@item.ID">Edit</a> |
+                    <a asp-page="./Details" asp-route-id="@item.ID">Details</a> |
+                    <a asp-page="./Delete" asp-route-id="@item.ID">Delete</a>
+                </td>
+            </tr>
+    }
+        </tbody>
+    </table>*@
+
+<p>Test Code for starting timer</p>
+
+<div class="row">
+    <div class="col-md-6">
+        <form method="post">
+            <button type="submit" id="btnStart" value="StartTimer" asp-page-handler="StartTimer">Start Timer</button>
+        </form>
+    </div>
+
+    <div class="col-md-6">
+        <form method="post">
+            <button type="submit" id="btnStart" value="StopTimer" asp-page-handler="StopTimer">Stop Timer</button>
+        </form>
+    </div>
+</div>
+
+<p>End Test Code</p>
