@@ -1,4 +1,10 @@
-﻿using Microsoft.AspNetCore.Builder;
+﻿/*
+ * CEN 4031 Advanced Programming Development Framework
+ * Class: 3222  Instructor: Tillman  Team: Honey Badger
+ * Final Project: MyFitTimer
+ * Members: Jacob Leffew, William Kategianes, Sean Meinsen
+*/
+using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
